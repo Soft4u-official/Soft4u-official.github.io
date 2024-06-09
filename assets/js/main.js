@@ -23,16 +23,17 @@ Author: GrayGrids
         var header_navbar = document.querySelector(".navbar-area");
         var sticky = header_navbar.offsetTop;
 
-        var logo = document.querySelector('.navbar-brand img')
+        var logo = document.querySelector('.navbar-brand p')
         if (window.pageYOffset > sticky) {
-          header_navbar.classList.add("sticky");
-          logo.src = 'assets/images/logo/logo.svg';
+            header_navbar.classList.add("sticky");
+            logo.classList.remove("heading-name");
+            logo.classList.add("heading-name2")
         } else {
-          header_navbar.classList.remove("sticky");
-          logo.src = 'assets/images/logo/white-logo.svg';
+            logo.classList.remove("heading-name2");
+            header_navbar.classList.remove("sticky");
+            logo.classList.add("heading-name");
         }
 
-        // show or hide the back-top-top button
         var backToTo = document.querySelector(".scroll-top");
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "flex";

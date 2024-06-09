@@ -42,6 +42,18 @@ body {
   font-size: 15px;
 }
 
+.heading-name{
+  font-size: xx-large;
+  font-weight: 600;
+  color: white;
+}
+
+.heading-name2{
+  font-size: xx-large;
+  font-weight: 600;
+  color: green;
+}
+
 p {
   margin: 0;
   padding: 0;
